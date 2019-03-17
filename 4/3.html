@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>closure</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      function dayofweekn(num){
+        var number=num;
+        function dayofweekw(){
+          console.log("heloo",number)
+          switch(number){
+            case 1:
+              return "monday"
+
+            case 2:
+              return "tuesday"
+
+            case 3:
+              return "wednesday"
+
+            case 4:
+              return "thursday"
+
+            case 5:
+              return "friday"
+
+            case 6:
+              return "saturday"
+
+            case 7:
+              return "sunday"
+
+            default:
+              return "such a day doesn't exist"
+          }
+        }
+        return dayofweekw;
+      }
+      var convert = dayofweekn(5);
+      console.log(convert())
+    </script>
+  </body>
+</html>

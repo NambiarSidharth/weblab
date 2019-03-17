@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>using prototype</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+    function mathi(num){
+      this.square=function(){
+        return Math.pow(num,2)
+      }
+      this.cube=function(){
+        return Math.pow(num,3)
+      }
+      this.sqrt=function(){
+        return Math.sqrt(num)
+      }
+    }
+    mathi.prototype.res=function(){
+      console.log(this.square())
+      console.log(this.cube())
+      console.log(this.sqrt())
+    }
+    var answer = new mathi(9)
+    answer.res()
+
+    </script>
+  </body>
+</html>
