@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>calculator</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      class Calculator{
+        constructor(num){
+          this.cur_num=num
+        }
+      }
+      Calculator.prototype.add=function(num){
+        this.cur_num=this.cur_num+num
+        return this
+      }
+      Calculator.prototype.subtract=function(num){
+        this.cur_num=this.cur_num-num
+        return this
+      }
+      Calculator.prototype.getAnswer=function(){
+        return this.cur_num;
+      }
+    </script>
+  </body>
+</html>
