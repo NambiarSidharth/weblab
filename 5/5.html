@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+      <script type="text/javascript">
+        Array.prototype.toPalindrome=function(){
+          var temp2=[]
+          this.forEach(k=>{
+            temp2.push(k)
+          })
+          var temp=this.slice(0,this.length-1)
+          temp.reverse().forEach(k=>{
+            temp2.push(k)
+          })
+          return temp2
+        }
+      </script>
+  </body>
+</html>
