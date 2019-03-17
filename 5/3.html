@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      function Triangle(s1,s2,s3){
+        this.a=s1;
+        this.b=s2;
+        this.c=s3;
+      }
+      var shape= new Object()
+      shape.type="triangle"
+      shape.getType=function(){
+        return this.type
+      }
+
+      shape.constructor=Triangle.prototype.constructor
+      Triangle.prototype=shape
+      Triangle.prototype.getPerimeter=function(){
+        var per=this.a+this.b+this.c;
+        return per
+      }
+
+    </script>
+  </body>
+</html>
