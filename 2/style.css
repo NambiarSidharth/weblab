@@ -1,0 +1,26 @@
+h1 {
+  width: 100%;
+  justify-content: center;
+  color:blue;
+  padding: 5rem;
+  font-style: italic;
+  margin-left: 3rem
+}
+
+#name{
+  padding:0rem 3rem;
+  margin-bottom: 2rem 0rem;
+
+}
+h3{
+  color:orange;
+  padding: 2rem;
+  font-style: oblique;
+}
+p{
+  margin: 0rem 4rem;
+}
+.list{
+  margin: 0rem 4rem;
+  font-style: italic;
+}
