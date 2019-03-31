@@ -19,8 +19,44 @@ h3{
 }
 p{
   margin: 0rem 4rem;
+  font-style: oblique;
+  background-color: silver;
+  padding:2rem;
+  margin:0rem 4rem ;
+  text-align: center;
+}
+ul{
+  list-style-type: none;
+}
+ol{
+  list-style: none;
+}
+li{
+  text-align: center;
+  margin:5px;
+  padding:1rem;
+  background-color:silver;
 }
 .list{
   margin: 0rem 4rem;
   font-style: italic;
+}
+#image-cont{
+  margin:3rem;
+}
+.image{
+  float: left;
+  margin:2rem 7rem;
+  background-color: gray
+}
+
+img{
+width:300px;
+height:300px;
+margin:2rem
+}
+h4{
+  text-align: center;
+  font-style: italic;
+  color: purple
 }
