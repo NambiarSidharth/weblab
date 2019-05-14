@@ -27,7 +27,7 @@ app.post('/addData',function(req,res){
   var errors=req.validationErrors()
   console.log(errors)
   if(errors){
-    res.status(400).json(JSON.stringify(errors))
+    res.status(400).json(errors)
   }else{
     res.status(200).json({message:"done"})
   }
